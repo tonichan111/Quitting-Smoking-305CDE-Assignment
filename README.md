@@ -1,1 +1,3 @@
 # Quitting-Smoking-305CDE-Assignment
+NAME: CHAN CHI TUNG
+STUDENT ID: 167370201
