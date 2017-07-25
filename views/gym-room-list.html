@@ -1,0 +1,31 @@
+<section id="gym-room-list">
+  <div class="container">
+		<p>If addicted to cigarettes, you can go to fitness room to change living habits. Exercise not only improves mood and boosts energy, but also helps control addiction...</p>
+		<p>Here are some information about the fitness room provided by the government...</p>
+		<div id="custom-search-input">
+			<div class="input-group col-xs-12">
+				<input type="text" class="  search-query form-control" placeholder="Search"  ng-model="query"/>
+			</div>
+		</div>
+		<div id="gym-location-list">
+			<table class="table table-inverse">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Address</th>
+						<th>Tel</th>
+						<th>Add to Favorite</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr ng-repeat="post in posts | filter: search" ng-class-odd="'odd'" ng-class-even="'even'">
+						<td>{{ post.Name_en }}</td>
+						<td>{{ post.Address_en }}</td>
+						<td>{{ post.Phone }}</td>
+						<td class="icon"><a href="javascript:" ng-click="addFavorite(post.Name_en, post.Address_en, post.Phone)"><img src="files/img/favorite-button.jpg" alt="favorite"></a></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+  </div>
+</section>
